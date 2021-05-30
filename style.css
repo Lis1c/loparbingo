@@ -1,0 +1,31 @@
+/*Как же я задолбался подбирать параметры чтобы таблица не плыла при вводе большого текста. */
+.bugurt {
+	margin: 40px;
+}
+
+table {
+	margin: 0 auto; 
+    overflow: hidden; 
+    text-align: center; 
+    background: rgb(255,255,204); 
+    border-spacing: 10px; 
+    table-layout: fixed; 
+    width: 60%;
+}
+
+td {
+	position: relative; 
+    min-width: 100px; 
+    height: 100px; 
+    border: 3px solid black; 
+    padding: 20px; 
+    word-wrap: break-word;
+}
+  
+td:hover {
+    background: rgb(204,255,229);
+}
+
+td.on {
+    background-color: rgb(153,233,153);
+}
